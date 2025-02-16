@@ -1,0 +1,122 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+  background: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  font-size: 16px;
+}
+
+.title {
+  color: rgb(255, 244, 31);
+  background-color: rgb(4, 4, 89);
+  padding: 15px 30px;
+  border-radius: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+input {
+  padding-left: 10px;
+  font-size: 18px;
+  width: 300px;
+  height: 40px;
+  border: 2px solid rgb(8, 20, 95);
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: rgb(255, 244, 31);
+  box-shadow: 0 0 10px rgba(8, 20, 95, 0.5);
+}
+
+table {
+  width: 100%;
+  max-width: 1000px;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: rgb(8, 20, 96);
+  color: rgb(255, 244, 31);
+  text-align: center;
+}
+
+thead tr {
+  height: 50px;
+}
+
+thead td {
+  padding: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+tbody > tr {
+  text-align: center;
+  height: 60px;
+  transition: background-color 0.3s;
+}
+
+tbody > tr:hover {
+  background-color: rgba(8, 20, 96, 0.05);
+}
+
+.rank {
+  text-align: center;
+  font-weight: bold;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  padding-left: 10px;
+}
+
+.logo img {
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+td {
+  padding: 10px;
+  font-size: 16px;
+  color: rgb(34, 34, 34);
+}
+
+.marketCap, .price, .availableSupply {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  table {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  .title {
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}

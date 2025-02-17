@@ -32,7 +32,7 @@ This is a simple React application that allows users to search and view cryptocu
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/crypto-finder.git
+git clone https://premqer/crypto-finder.git
 ```
 
 ### 2. Install Dependencies
